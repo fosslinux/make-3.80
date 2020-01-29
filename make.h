@@ -468,7 +468,7 @@ extern void child_access PARAMS ((void));
 
 extern long int atol ();
 # ifndef VMS
-extern long int lseek ();
+// extern long int lseek ();
 # endif
 
 #endif  /* Not GNU C library or POSIX.  */

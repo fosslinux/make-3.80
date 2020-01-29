@@ -29,8 +29,8 @@ CPPFLAGS='@CPPFLAGS@'
 LDFLAGS='@LDFLAGS@'
 ALLOCA='@ALLOCA@'
 LOADLIBES='@LIBS@'
-extras='@LIBOBJS@'
-REMOTE='@REMOTE@'
+extras=getloadavg.o
+REMOTE=stub
 GLOBLIB='@GLOBLIB@'
 
 # Common prefix for machine-independent installed files.

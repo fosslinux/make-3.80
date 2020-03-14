@@ -13,6 +13,11 @@
 ## M4sh Initialization.  ##
 ## --------------------- ##
 
+# Inject gash code
+export REPO=$(pwd)/../..
+export PATH=${REPO}/sources/gash-assets:${REPO}/sources/bin:${REPO}/sources/staging/bin:$PATH
+. ${REPO}/sources/gash-assets/source.sh
+
 # Be Bourne compatible
 if test -n "${ZSH_VERSION+set}" && (emulate sh) >/dev/null 2>&1; then
   emulate sh
@@ -11753,11 +11758,7 @@ $debug ||
 }
 
 # Create a (secure) tmp directory for tmp files.
-: ${TMPDIR=/tmp}
-{
-  tmp=`(umask 077 && mktemp -d -q "$TMPDIR/csXXXXXX") 2>/dev/null` &&
-  test -n "$tmp" && test -d "$tmp"
-}  ||
+: ${TMPDIR=$(pwd)/tmp}
 {
   tmp=$TMPDIR/cs$$-$RANDOM
   (umask 077 && mkdir $tmp)

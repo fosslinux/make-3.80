@@ -44,3 +44,8 @@
 /variable.o
 /version.o
 /vpath.o
+
+# Configure artifacts
+/autom4te.cache/
+/conf*.file
+/confdefs.h

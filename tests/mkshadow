@@ -1,4 +1,4 @@
-#!/bin/sh
+#!gash
 #
 # Simple script to make a "shadow" test directory, using symbolic links.
 # Typically you'd put the shadow in /tmp or another local disk

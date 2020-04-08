@@ -1,4 +1,4 @@
-#!/bin/sh
+#!gash
 #
 # install - install a program, script, or datafile
 # This comes from X11R5 (mit/util/scripts/install.sh).
@@ -22,7 +22,6 @@
 # This script is compatible with the BSD install script, but was written
 # from scratch.  It can only install one file at a time, a restriction
 # shared with many OS's install programs.
-
 
 # set DOITPROG to echo to test this script
 

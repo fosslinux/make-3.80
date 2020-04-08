@@ -1,4 +1,4 @@
-#! /bin/sh
+#!gash
 
 # Wrapper for compilers which do not understand `-c -o'.
 

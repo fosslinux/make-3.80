@@ -24,6 +24,8 @@
 /getopt1.o
 /glob.o
 /glob/.deps/
+/glob/glob.o
+/glob/fnmatch.o
 /glob/Makefile
 /hash.o
 /implicit.o
@@ -49,3 +51,6 @@
 /autom4te.cache/
 /conf*.file
 /confdefs.h
+/config.status
+/configure.lineno
+/tmp/

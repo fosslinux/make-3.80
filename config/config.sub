@@ -1,4 +1,4 @@
-#! /bin/sh
+#!gash
 # Configuration validation subroutine script.
 #   Copyright (C) 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999,
 #   2000, 2001, 2002 Free Software Foundation, Inc.
@@ -124,7 +124,7 @@ case $maybe_os in
     ;;
   *)
     basic_machine=`echo $1 | sed 's/-[^-]*$//'`
-    if [ $basic_machine != $1 ]
+    if test $basic_machine != $1
     then os=`echo $1 | sed 's/.*-/-/'`
     else os=; fi
     ;;
@@ -1074,7 +1074,7 @@ esac
 
 # Decode manufacturer-specific aliases for certain operating systems.
 
-if [ x"$os" != x"" ]
+if test x"$os" != x""
 then
 case $os in
         # First match some system type aliases

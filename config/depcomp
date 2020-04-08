@@ -1,4 +1,4 @@
-#! /bin/sh
+#!gash
 
 # depcomp - compile a program generating dependencies as side-effects
 # Copyright 1999, 2000 Free Software Foundation, Inc.
